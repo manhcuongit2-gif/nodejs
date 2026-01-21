@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/manhcuongit2-gif/nodejs/issues"
   },
-  "homepage": "https://github.com/manhcuongit2-gif/nodejs#readme"
+  "homepage": "https://github.com/manhcuongit2-gif/nodejs#readme",
+  "dependencies": {
+    "express": "5.0.1"
+  }
 }
