@@ -3,8 +3,13 @@ import express from "express";
 import 'dotenv/config';
 const app = express();
 const port = process.env.PORT || 8386;
+
+//config view engine
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
+
 app.get("/", (req, res) => {
-    res.send(`<h1 style="color: blue;">Hello World</h1>`);
+    res.render("home.ejs");
 });
 app.get("/hoi", (req, res) => {
     res.send("hello tim viec lam");
