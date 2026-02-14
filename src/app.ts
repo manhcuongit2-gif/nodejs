@@ -13,6 +13,9 @@ app.set("views", __dirname + "/views");
 //config router
 webRouters(app);
 
+//config static files
+app.use(express.static("public"));
+
 app.listen(port, () => {
     console.log(`My app is running on port: ${port}`)
     console.log("env port: ", process.env.PORT);
